@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Signal</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="theme.css">
+  <script defer src="common.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div><strong>Signal</strong><span>Website health monitor</span></div>
+    <a href="/">Local demo</a>
+  </header>
+  <main class="shell">
+    <section class="hero">
+      <p class="badge">QA and security checks</p>
+      <h1>Run bounded health checks on known local sites.</h1>
+      <p>Reports cover HTTP status, response time, security headers, TLS expiry when HTTPS is used, and same-origin links.</p>
+    </section>
+    <section class="grid">
+      <div class="panel">
+        <div class="panel-title">
+          <h2>Targets</h2>
+          <span id="targetCount"></span>
+        </div>
+        <div id="targets" class="list"></div>
+      </div>
+      <aside class="panel">
+        <h2>Latest report</h2>
+        <div id="report" class="stack muted">Run a check to see details.</div>
+      </aside>
+    </section>
+    <section class="panel">
+      <h2>History</h2>
+      <div id="history" class="list"></div>
+    </section>
+    <div id="status" class="status" role="status" aria-live="polite"></div>
+  </main>
+</body>
+</html>

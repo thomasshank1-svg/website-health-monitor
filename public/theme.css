@@ -1,0 +1,40 @@
+:root{--accent:#0f766e}
+
+.topbar div {
+  display: grid;
+}
+
+.topbar span {
+  color: #61708a;
+  font-size: .9rem;
+}
+
+.shell {
+  max-width: 1248px;
+  margin: auto;
+  padding: 35px 24px 64px;
+}
+
+.hero {
+  margin-bottom: 28px;
+  max-width: 760px;
+}
+
+.panel-title,
+.target {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+@media(max-width:760px) {
+  .shell {
+    padding: 24px 16px;
+  }
+
+  .panel-title,
+  .target {
+    flex-direction: column;
+  }
+}
