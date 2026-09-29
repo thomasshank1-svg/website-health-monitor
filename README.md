@@ -1,5 +1,7 @@
 # Signal
 
+![Project screenshot](docs/screenshot.png)
+
 Signal is a bounded website health monitor for QA, IT, and security-awareness demos. It checks configured local targets for HTTP status, response time, common security headers, TLS expiry for HTTPS URLs, and same-origin links.
 
 ## Run
